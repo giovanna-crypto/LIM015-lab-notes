@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 //import '@/firebase/config.js'
-/* import firebase from 'firebase'
+/*import firebase from 'firebase'
 
 const firebaseConfig = {
     apiKey: "AIzaSyCt406fTw1d7WBDBD3t1PenJfK1_R7Ahww",
