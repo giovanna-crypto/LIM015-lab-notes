@@ -6,9 +6,9 @@
         <input class="inputText" type="text"  placeholder= "Escribe una nota...">
       </div> <br>
       <button class="btn-add-note">Agregar</button>
-      <div class="hello">
-  <h1>{{ msg }}</h1>
-  </div>
+       <!-- <div class="hello">
+       <h1>{{ msg }}</h1> 
+       </div>-->
     </form>
   </div>
   
@@ -16,12 +16,12 @@
 
 
 <script>
-export default {
+/*export default {
   name: 'HelloWorld',
   props: {
     msg: String
   }
-}
+}*/
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -34,9 +34,9 @@
 </template>
 
 <script>
-/*import '@/firebase/config'
+import '@/firebase/config'
 //import { db } from '@/firebase/config.js'
-import { registerUser } from '@/firebase/firebase-fn.js'*/
+import { registerUser } from '@/firebase/firebase-fn.js'
 export default {
   data() {
     return {
@@ -50,7 +50,9 @@ export default {
  name: 'Register',
   methods: {
     register() {
-      /*this.error = ''
+      /* eslint-disable no-debugger */
+      debugger
+      this.error = ''
       if (this.name && this.email && this.password && this.passwordDos){
         registerUser(this.email, this.password, this.passwordDos)
         .then(user=> {
@@ -64,7 +66,7 @@ export default {
         })
       }else {
         this.error = "Ingrese correctamente sus datos"
-      }*/
+      }
     console.log("happyNotes");
       
     }

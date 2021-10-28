@@ -11,7 +11,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export const registerUser = (email, password) => {
 
 const auth = getAuth();
-createUserWithEmailAndPassword(auth, email, password)
+return createUserWithEmailAndPassword(auth, email, password)
   /*.then((userCredential) => {
     // Signed in
     const user = userCredential.user;
@@ -21,7 +21,7 @@ createUserWithEmailAndPassword(auth, email, password)
     const errorCode = error.code;
     const errorMessage = error.message;
     // ..
-  }); */ 
+  }); */
 }
 
 /* **********Función iniciar sesión con google********** */
