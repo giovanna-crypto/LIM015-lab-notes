@@ -68,7 +68,6 @@ export default {
         this.error = "Ingrese correctamente sus datos"
       }
     console.log("happyNotes");
-      
     }
   }
 }

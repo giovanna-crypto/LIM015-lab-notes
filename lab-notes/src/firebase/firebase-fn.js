@@ -7,9 +7,8 @@ export const validationEmail = () => firebase.auth().currentUser.sendEmailVerifi
 //export const loginUser = (email, password) => firebase.auth().signInWithEmailAndPassword(email, password);
 
 /* **********Función para registrar usuario********** */
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 export const registerUser = (email, password) => {
-
 const auth = getAuth();
 return createUserWithEmailAndPassword(auth, email, password)
   /*.then((userCredential) => {
@@ -21,9 +20,23 @@ return createUserWithEmailAndPassword(auth, email, password)
     const errorCode = error.code;
     const errorMessage = error.message;
     // ..
-  }); */
+  });*/
 }
 
+/***********Función login ***********/
+export const loginUser = (email, password) => {
+  const auth = getAuth();
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user);
+  }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
+  })
+  }
 /* **********Función iniciar sesión con google********** */
 /*export const loginGoogle = () => {
   // eslint-disable-next-line max-len
